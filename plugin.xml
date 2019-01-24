@@ -22,6 +22,9 @@
                 <param name="android-package" value="io.github.pwlin.cordova.plugins.fileopener2.FileOpener2" />
             </feature>
         </config-file>
+	<config-file parent="/manifest" target="AndroidManifest.xml" xmlns:android="http://schemas.android.com/apk/res/android">
+            <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+        </config-file>
         <config-file target="AndroidManifest.xml" parent="/*">
             <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
         </config-file>
